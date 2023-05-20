@@ -1,0 +1,43 @@
+.details-outer-wrapper{
+	display: flex;
+}
+.size-varient{
+	padding: 14px 16px;
+	border: solid 2px #0054ff;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: all .3s ease-in-out;
+}
+.size-varient:hover{
+	background-color: #0054ff;
+	color: #fff;
+	cursor: pointer;
+}
+
+.details-btn{
+	padding: 15px 20px;
+	width: 40%;
+	margin: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn-primary{
+	background-color: #0054ff;
+	border: none;
+	border: solid 1px #0054ff;
+	color: #fff;
+	transition: all .3s ease-in-out;
+}
+
+.btn-sec:hover{
+	cursor: pointer;
+}
+
+.btn-primary:hover{
+	border: solid 1px #0054ff;
+	background-color: transparent;
+	color: #0054ff;
+	cursor: pointer;
+}

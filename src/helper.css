@@ -1,0 +1,389 @@
+/**************************************************************************************************************************
+                                                GENERAL CLASS
+**************************************************************************************************************************/
+.text-center {
+    text-align: center !important;
+}
+.text-capitalize{
+    text-transform: capitalize !important;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.parallax {
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+.flexed {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/**************************************************************************************************************************
+                                                DASH CLASS
+**************************************************************************************************************************/
+.l-dash {
+    display: inline-block;
+    padding: 0.5px 180px;
+    background: #42a07f;
+}
+
+.m-dash {
+    display: inline-block;
+    padding: 0.5px 70px;
+    background: #42a07f;
+}
+
+.s-dash {
+    display: inline-block;
+    padding: 0.5px 30px;
+    background: #42a07f;
+}
+
+/**************************************************************************************************************************
+                                                    CONTENT BOXES
+**************************************************************************************************************************/
+
+.content-box-x-lg {
+    padding: 240px 0;
+}
+
+.content-box-lg {
+    padding: 160px 0;
+}
+
+.content-box-md {
+    padding: 80px 0;
+}
+
+.content-box-sm {
+    padding: 40px 0;
+}
+
+.content-box-x-sm {
+    padding: 20px 0;
+}
+
+/**************************************************************************************************************************
+                                                        MARGINS
+**************************************************************************************************************************/
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.m-10 {
+    margin: 10px !important;
+}
+
+.m-20 {
+    margin: 20px !important;
+}
+
+.m-30 {
+    margin: 30px !important;
+}
+
+.m-40 {
+    margin: 40px !important;
+}
+
+.m-50 {
+    margin: 50px !important;
+}
+
+.m-60 {
+    margin: 60px !important;
+}
+
+.m-70 {
+    margin: 70px !important;
+}
+
+.m-80 {
+    margin: 80px !important;
+}
+
+.m-90 {
+    margin: 90px !important;
+}
+
+.m-100 {
+    margin: 100px !important;
+}
+
+/**************************************************************************************************************************
+                                                        MARGINS TOP
+**************************************************************************************************************************/
+.m-t-0 {
+    margin-top: 0px !important;
+}
+
+.m-t-10 {
+    margin-top: 10px !important;
+}
+
+.m-t-20 {
+    margin-top: 20px !important;
+}
+
+.m-t-30 {
+    margin-top: 30px !important;
+}
+
+.m-t-40 {
+    margin-top: 40px;
+}
+
+.m-t-50 {
+    margin-top: 50px !important;
+}
+
+.m-t-60 {
+    margin-top: 60px !important;
+}
+
+.m-t-70 {
+    margin-top: 70px !important;
+}
+
+.m-t-80 {
+    margin-top: 80px !important;
+}
+
+.m-t-90 {
+    margin-top: 90px !important;
+}
+
+.m-t-100 {
+    margin-top: 100px !important;
+}
+
+/**************************************************************************************************************************
+                                                        MARGINS BOTTOM
+**************************************************************************************************************************/
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important;
+}
+
+.m-b-20 {
+    margin-bottom: 20px !important;
+}
+
+.m-b-30 {
+    margin-bottom: 30px !important;
+}
+
+.m-b-40 {
+    margin-bottom: 40px !important;
+}
+
+.m-b-50 {
+    margin-bottom: 50px !important;
+}
+
+.m-b-60 {
+    margin-bottom: 60px !important;
+}
+
+.m-b-70 {
+    margin-bottom: 70px !important;
+}
+
+.m-b-80 {
+    margin-bottom: 80px !important;
+}
+
+.m-b-90 {
+    margin-bottom: 90px !important;
+}
+
+.m-b-100 {
+    margin-bottom: 100px !important;
+}
+
+/**************************************************************************************************************************
+                                                        PADDINGS
+**************************************************************************************************************************/
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-10 {
+    padding: 10px !important;
+}
+
+.p-20 {
+    padding: 20px !important;
+}
+
+.p-30 {
+    padding: 30px !important;
+}
+
+.p-40 {
+    padding: 40px !important;
+}
+
+.p-50 {
+    padding: 50px !important;
+}
+
+.p-60 {
+    padding: 60px !important;
+}
+
+.p-70 {
+    padding: 70px !important;
+}
+
+.p-80 {
+    padding: 80px !important;
+}
+
+.p-90 {
+    padding: 90px !important;
+}
+
+.p-100 {
+    padding: 100px !important;
+}
+
+/**************************************************************************************************************************
+                                                        PADDINGS TOP
+**************************************************************************************************************************/
+
+.p-t-0 {
+    padding-top: 0 !important;
+}
+
+.p-t-10 {
+    padding-top: 10px !important;
+}
+
+.p-t-20 {
+    padding-top: 20px !important;
+}
+
+.p-t-30 {
+    padding-top: 30px !important;
+}
+
+.p-t-40 {
+    padding-top: 40px !important;
+}
+
+.p-t-50 {
+    padding-top: 50px !important;
+}
+
+.p-t-60 {
+    padding-top: 60px !important;
+}
+
+.p-t-70 {
+    padding-top: 70px !important;
+}
+
+.p-t-80 {
+    padding-top: 80px !important;
+}
+
+.p-t-90 {
+    padding-top: 90px !important;
+}
+
+.p-t-100 {
+    padding-top: 100px !important;
+}
+
+/**************************************************************************************************************************
+                                                        PADDINGS BOTTOM
+**************************************************************************************************************************/
+
+.p-b-0 {
+    padding-bottom: 0 !important;
+}
+
+.p-b-10 {
+    padding-bottom: 10px !important;
+}
+
+.p-b-20 {
+    padding-bottom: 20px !important;
+}
+
+.p-b-30 {
+    padding-bottom: 30px !important;
+}
+
+.p-b-40 {
+    padding-bottom: 40px !important;
+}
+
+.p-b-50 {
+    padding-bottom: 50px !important;
+}
+
+.p-b-60 {
+    padding-bottom: 60px !important;
+}
+
+.p-b-70 {
+    padding-bottom: 70px !important;
+}
+
+.p-b-80 {
+    padding-bottom: 80px !important;
+}
+
+.p-b-90 {
+    padding-bottom: 90px !important;
+}
+
+.p-b-100 {
+    padding-bottom: 100px !important;
+}
+
+/**************************************************************************************************************************
+                                                        Button
+**************************************************************************************************************************/
+
+.btn-container{
+    display: inline-block;
+    border:solid 1px var(--orange);
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+}
+.btn-container a{
+    color: var(--orange);
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+}
+.btn-container:hover{
+    background: var(--orange);
+}
+.btn-container:hover a{
+    color: var(--offWhite);
+}

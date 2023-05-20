@@ -6,6 +6,7 @@ var initialData = {
 
 const productReducer = (storeData = initialData, action) => {
   //   alert("Product Reducer Called");
+  
      console.log("productReducer Called");
   switch (action.type) {
     case "SHIRTS": {

@@ -1,15 +1,39 @@
 .card {
-	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-	margin: 15px;
-	border-radius: 5px;
+	box-shadow: 10px 10px 30px rgba(255, 0, 0, 0.1);
+	margin: 16px;
+	border-radius: 15px;
+	
 }
 .card-info{
 	text-transform: capitalize;
+	
 }
 .product-image {
+	border-radius: 5px;
 	width: 210px;
 	height: 280px;
 }
+.product-image:hover{
+	transform: scale(1.1);
+	opacity: 0.5;
+}
+.text {
+	background-color: #f408b5;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 1px 31px;
+	border-radius: 7px;
+	text-decoration:none;
+	margin-top: -32px;
+  }
+  /* .text:hover {
+	color: #aa047e;
+	background-color: rgb(254, 254, 254);
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 31px;
+	border-radius: 7px;
+  } */
 
 .card-info h3,
 p {
@@ -22,7 +46,7 @@ p {
 }
 
 .card:hover {
-	box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 13px 10px -7px rgba(255, 0, 0, 0.1);
 
 }
 

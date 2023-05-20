@@ -34,12 +34,15 @@ const ProductItem = () => {
                                             <div className="slider">
                                                 <NavLink to={linkto}>
                                                     <img src={imgscr} alt="" className="product-image" />
+                                                    <div class="middle">
+                                                       <div class="text">Show Details</div>
+                                                     </div>
                                                 </NavLink>
                                             </div>
                                             <div className="card-info">
                                                 <div className="flexed">
 												<div className="card-category">{pname}</div>
-												<div className="similar p-r">
+												<div style={{color: "red"}}>
 												<FontAwesomeIcon icon={faBox} />
 												</div>
 												</div>
@@ -52,7 +55,7 @@ const ProductItem = () => {
                                                         actionCreator(value)
                                                         alert("Product Added to Wishlist")
                                                      }}
-                                                     > Add to Wishlist </button>
+                                                     > Wishlist </button>
                                                 </div>
                                             </div>
                                         </div>

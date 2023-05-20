@@ -1,0 +1,47 @@
+.modal-wrapper{
+	top: 8px;
+    bottom: 5px;
+    right: 250px;
+    left: 28px;
+    position: fixed;
+    border-radius: 10px;
+    background: #eef9c6;
+    z-index: 99;
+}
+.flex-end{
+	justify-content: center;
+	padding: 10px;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 500;
+	font-size: 22px;
+}
+#close {
+	margin-left: 311px;
+    justify-content: space-between;
+    /* float:right; */
+    display:inline-block;
+    padding:2px 5px;
+    background:#070707;
+}
+.inner-head{
+	width: 100%;
+	height: 50px;
+	background-color: #ff00ff;
+	border-radius: 10px;
+}
+.card-wrapper{
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin-top: 30px;
+	background-color: #fff;
+}
+.inner-product-image {
+		width: 233px;
+		height: 280px;
+	}
+	.inner-card-info h3,
+	p {
+		margin: 2px;
+
+	}

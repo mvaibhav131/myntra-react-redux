@@ -1,0 +1,21 @@
+.image-left{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.content-image {
+    margin-right: 5px;
+	margin-bottom: 10px;
+    border-radius: 10px;
+	overflow: hidden;
+}
+
+.image-detailed{
+	width: 370px;
+	transition: all .3s ease-in-out;
+	cursor:zoom-in;
+}
+
+.image-detailed:hover{
+	transform: scale(1.4);
+}

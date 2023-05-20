@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Cards from "./components/Product/Cards";
+import Pdata from "./components/Product/Pdata";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Filter from "./components/Filter/Filter.jsx";
+import Sort from "./components/Sort/Sort.jsx";
+import { Route, Routes } from "react-router-dom";
+import Details from "./components/DetailsPage/Details";
+import HomePage from "./components/Product/HomePage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/details/:detailslug" element={<Details/>} />
+      </Routes>
+
+    </>
   );
-}
+};
 
 export default App;

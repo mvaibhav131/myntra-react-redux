@@ -65,7 +65,7 @@ const Modal = () => {
                             actionCreator(value)
                             alert("Product Removed from Wishlist")
                           }}
-                        >
+                         >
                           Remove from Wishlist
                         </button>
                       </div>

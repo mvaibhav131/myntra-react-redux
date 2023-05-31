@@ -9,6 +9,8 @@ import { useState, useEffect } from "react";
 import { wishActionCreator } from '../../ActionCreator/productActionCreator';
 
 const ProductItem = () => {
+
+    const [text,setText]=useState(false)
     
     const productData = useSelector((storeData) => {
     return storeData.productReducer.shirts;
@@ -19,6 +21,7 @@ const ProductItem = () => {
     actionCreator();
   }, []);
 
+//   let onClickText="added to watchlist"
     return (
         <>
             <div className="container left-content-border">
@@ -51,15 +54,19 @@ const ProductItem = () => {
                                                 <div className="wishlist-wrapper">
                                                     <button className="wishlist" 
                                                     onClick={() => { 
+                                                        setText(!text)
                                                         let actionCreator = bindActionCreators(wishActionCreator, dispatch);
                                                         actionCreator(value)
+                                                        // eslint-disable-next-line no-unused-expressions
+
                                                         alert("Product Added to Wishlist")
                                                      }}
-                                                     > Wishlist </button>
+                                                     > {text ? "Aded to wishlist":"wishlish"} </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 ) : null
                         })
                     }

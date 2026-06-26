@@ -1,18 +1,35 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
-import Style from "./index.css";
-import { store } from "./ReduxStore/store"
-import { Provider } from "react-redux";
-import { HashRouter } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './ReduxStore/store';
+import { AuthProvider } from './context/AuthContext';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import App from './App';
+import './index.css';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <Provider store={store}>
     <HashRouter>
-      <App />
+      <AuthProvider>
+        <App />
+        <ToastContainer
+          position="bottom-right"
+          autoClose={2500}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover={false}
+          theme="light"
+        />
+      </AuthProvider>
     </HashRouter>
-  </Provider>,
-
-  document.getElementById("root")
+  </Provider>
 );
+

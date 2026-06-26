@@ -1,0 +1,167 @@
+/* ===== PROFILE PAGE ===== */
+.profile-page { background: var(--light-gray); min-height: 80vh; padding: 24px 0 48px; }
+.profile-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+/* Sidebar */
+.profile-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: sticky;
+  top: calc(var(--navbar-height) + 16px);
+}
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.avatar-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--orange));
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.avatar-info strong { display: block; font-size: 14px; font-weight: 700; }
+.avatar-info span { font-size: 12px; color: var(--gray); word-break: break-all; }
+.profile-nav { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); }
+.profile-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-2);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: background .15s, color .15s, border-color .15s;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+}
+.profile-nav-item:last-child { border-bottom: none; }
+.profile-nav-item:hover { background: var(--light-gray); color: var(--primary); border-left-color: var(--primary); }
+.profile-nav-item.active { color: var(--primary); border-left-color: var(--primary); background: var(--primary-light); }
+.profile-nav-item svg { font-size: 14px; }
+.logout-nav-btn { color: var(--primary) !important; }
+/* Main */
+.profile-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.profile-section { background: #fff; border-radius: 8px; padding: 20px 24px; box-shadow: var(--shadow); }
+.section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.section-head h3 { font-size: 17px; font-weight: 700; }
+.edit-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  transition: background .15s, color .15s;
+}
+.edit-profile-btn:hover { background: var(--primary); color: #fff; }
+/* Info grid */
+.profile-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pi-item { display: flex; align-items: flex-start; gap: 12px; }
+.pi-icon { font-size: 18px; color: var(--primary); margin-top: 2px; flex-shrink: 0; }
+.pi-label { font-size: 12px; color: var(--gray); display: block; margin-bottom: 2px; }
+.pi-value { font-size: 14px; font-weight: 600; display: block; }
+/* Edit form */
+.edit-form { display: flex; flex-direction: column; gap: 14px; }
+.edit-field label { font-size: 12px; font-weight: 700; color: var(--dark-2); display: block; margin-bottom: 5px; }
+.edit-field input { width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: 5px; font-size: 14px; font-family: inherit; }
+.edit-field input:focus { border-color: var(--primary); outline: none; }
+.edit-actions { display: flex; gap: 12px; }
+.save-btn { background: var(--primary); color: #fff; font-size: 14px; font-weight: 700; padding: 10px 24px; border-radius: 5px; border: none; cursor: pointer; }
+.cancel-btn { background: #fff; color: var(--gray); font-size: 14px; font-weight: 700; padding: 10px 24px; border-radius: 5px; border: 1.5px solid var(--border); cursor: pointer; }
+/* Stats */
+.profile-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.stat-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+.stat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+.stat-icon { font-size: 28px; margin-bottom: 8px; }
+.stat-card strong { display: block; font-size: 26px; font-weight: 800; color: var(--dark); }
+.stat-card span { font-size: 13px; color: var(--gray); }
+/* Orders */
+.orders-list { display: flex; flex-direction: column; gap: 12px; }
+.order-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: box-shadow .2s;
+}
+.order-card:hover { box-shadow: var(--shadow); }
+.order-card img { width: 60px; height: 80px; object-fit: cover; border-radius: 4px; background: var(--light-gray); flex-shrink: 0; }
+.order-card-info { flex: 1; }
+.order-id { font-size: 13px; font-weight: 700; }
+.order-meta { font-size: 12px; color: var(--gray); margin: 2px 0; }
+.order-total { font-size: 14px; font-weight: 700; }
+.order-status { font-size: 13px; font-weight: 700; white-space: nowrap; }
+/* Not logged in */
+.profile-not-logged-in {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.pnl-icon { font-size: 72px; color: var(--border); margin-bottom: 20px; }
+.pnl-login-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 16px;
+  letter-spacing: 0.5px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-container { flex-direction: column; }
+  .profile-sidebar { width: 100%; position: static; }
+  .profile-info-grid { grid-template-columns: 1fr; }
+  .profile-stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 480px) {
+  .profile-stats { grid-template-columns: 1fr; }
+}

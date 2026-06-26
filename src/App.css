@@ -1,3 +1,60 @@
+/* ========== MYNTRA DESIGN TOKENS ========== */
+:root {
+  --primary: #ff3f6c;
+  --primary-hover: #ff2255;
+  --primary-light: #fff0f3;
+  --dark: #282c3f;
+  --dark-2: #3e4152;
+  --gray: #696b79;
+  --light-gray: #f4f4f5;
+  --border: #d4d5d9;
+  --white: #ffffff;
+  --green: #03a685;
+  --orange: #ff905a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-hover: 0 6px 20px rgba(0,0,0,0.14);
+  --radius: 4px;
+  --navbar-height: 70px;
+}
+
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Assistant', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--dark);
+  background: var(--light-gray);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration:none; color:inherit; }
+button { cursor:pointer; border:none; outline:none; font-family:inherit; background:none; }
+img { max-width:100%; display:block; }
+ul { list-style:none; }
+input,select,textarea { font-family:inherit; outline:none; }
+
+.app { min-height:100vh; display:flex; flex-direction:column; }
+.main-content { flex:1; padding-top:var(--navbar-height); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:var(--light-gray); }
+::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+::-webkit-scrollbar-thumb:hover { background:var(--gray); }
+
+/* Spinner */
+.spinner-wrapper { display:flex; justify-content:center; align-items:center; min-height:300px; }
+.spinner { width:44px; height:44px; border:3px solid var(--border); border-top-color:var(--primary); border-radius:50%; animation:spin .8s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* Star rating badge */
+.star-badge { display:inline-flex; align-items:center; gap:3px; background:var(--green); color:#fff; font-size:11px; font-weight:700; padding:2px 6px; border-radius:3px; }
+.rating-count { font-size:12px; color:var(--gray); margin-left:4px; }
+
+/* Responsive helpers */
+@media (max-width:768px) { .hide-mobile { display:none !important; } }
+@media (min-width:769px) { .show-mobile { display:none !important; } }
+
+/* ========== LEGACY (kept for compat) ========== */
 .App {
 	text-align: center;
 }
